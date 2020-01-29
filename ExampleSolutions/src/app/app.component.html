@@ -1,0 +1,11 @@
+<div class="row" fxLayout="row">
+    <div>
+        <h1>{{title}}</h1>
+    </div>
+    <div fxFlex></div>
+    <div>
+        {{time|date:'medium'}}
+    </div>
+</div>
+<button id="get-ip" (click)="getMyIp()">Get my IP</button> {{ip}}<br>
+<input value="1" min="1" (change)="updateNumber($event.target.value)" type="number" /> {{numberInformation}}
